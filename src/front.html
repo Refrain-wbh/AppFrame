@@ -1,0 +1,14 @@
+<div> 
+    <h1 style={{"margin":"auto","text-align": "center"}}>一个枯燥的RGB对照</h1>
+    <div style={{"height":"100px"}}></div>
+    <div style={{"height":"200px","width":"200px","margin":"auto",background:color}}></div>
+    <h4 tt:if={isshow} style={{"text-align":"center"}} className="list"> R:{cr} G:{cg} B:{cb} </h4> 
+    <div style={{"height":"200px","width":"400px","margin":"auto"}}>
+        <button type="button" style={{"height":"50px","width":"100px"}} onclick="changer()">R</button>
+        <button type="button" style={{"height":"50px","width":"100px"}} onclick="changeg()">G</button>
+        <button type="button" style={{"height":"50px","width":"100px"}} onclick="changeb()">B</button>    
+        <button type="button" tt:if={isshow} style={{"height":"50px","width":"100px"}} onclick="hidden()">隐藏</button>
+        <button type="button" tt:else={isshow} style={{"height":"50px","width":"100px"}} onclick="open()">显示</button>
+    
+    </div>
+</div>
